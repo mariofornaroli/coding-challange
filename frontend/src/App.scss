@@ -1,4 +1,39 @@
-.app {
-  min-height    : 100vh;
-  display       : flex;
+
+
+.main {
+  flex            : 1;
+  padding-top     : 40px;
+  background-color: #F4F3EF;
+  display         : flex;
+  justify-content : center;
+  align-items     : flex-start;
+}
+
+.error-msg {
+  color: #dc3545;
+}
+
+.card {
+  border          : 0;
+  border-radius   : 12px;
+  box-shadow      : 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  padding         : 12px 24px;
+  min-width       : 650px;
+  margin-bottom   : 32px;
+
+  .msg {
+    margin: 24px 16px;
+  }
+
+  .card-item {
+    border-top : 1px solid #808080;
+    padding    : 12px 20px;
+    display    : flex;
+    align-items: center;
+  }
+
+  .card-item:first-child {
+    border: none;
+  }
 }
