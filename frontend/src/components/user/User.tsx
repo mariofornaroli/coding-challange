@@ -1,4 +1,5 @@
 import React from 'react';
+import './User.scss';
 import { UserType } from "../../types/usersType";
 
 interface UserProps {

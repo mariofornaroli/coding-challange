@@ -1,0 +1,24 @@
+.user-info {
+    padding: 16px;
+    display: flex;
+
+    .info-item {
+        margin        : 0 24px;
+        letter-spacing: 0.3px;
+        min-width     : 68px;
+
+        label {
+            color    : #808080;
+            font-size: 90%;
+        }
+
+        p {
+            margin-top: 6px;
+            font-size : 1.1em;
+
+            &.user-name {
+                font-weight: bold;
+            }
+        }
+    }
+}
