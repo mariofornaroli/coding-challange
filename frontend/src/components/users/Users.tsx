@@ -18,21 +18,24 @@ const Users = () => {
         setUsers(users)
       }).catch((err) => {
         setError(true)
-      }).finally(()=> setIsLoading(false))
+      }).finally(() => setIsLoading(false))
   }, []);
 
   return (
-    <div className="card">
-      <div className="list-container">
-        {!error && users && (users.length > 0) &&
-          users.map((user: UserType) => (
-            <User user={user} key={user.id} />
-          ))
-        }
-        {error && <p className="msg error-msg">Error while loading the list of users</p>}
-        {isLoading && <p className="msg info-msg">Loading...</p>}
+    <>
+      <h1 className="title">Users List</h1>
+      <div className="card">
+        <div className="list-container">
+          {!error && users && (users.length > 0) &&
+            users.map((user: UserType) => (
+              <User user={user} key={user.id} />
+            ))
+          }
+          {error && <p className="msg error-msg">Error while loading the list of users</p>}
+          {isLoading && <p className="msg info-msg">Loading...</p>}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
