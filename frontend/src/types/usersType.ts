@@ -33,7 +33,7 @@ export class AddressType {
     city: string = '';
     zipcode: string = '';
 
-    format = () : string => {
+    format?: Function = () : string => {
         return `${this.suite}, ${this.street}, ${this.city} ${this.zipcode} `;
     }
 

@@ -17,7 +17,7 @@ const User = ({ user }: UserProps) => {
         </div>
         <div className="info-item">
           <label>Address</label>
-          <p>{user.address.format()}</p>
+          <p>{user.address.format && user.address.format()}</p>
         </div>
       </div>
     </div>
